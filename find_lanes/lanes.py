@@ -7,7 +7,7 @@ def make_coordinates(image, line_parameters):
     try:
         slope, intercept = line_parameters
     except TypeError:
-        slope, intercept = 1,1
+        slope, intercept = 0.1,0.1
     y1 = image.shape[0]
     y2 = int(y1*(3/5))
     x1 = int((y1 - intercept)/slope)
